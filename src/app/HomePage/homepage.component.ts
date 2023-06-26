@@ -1,10 +1,13 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
     templateUrl: './homepage.component.html'
 })
 
-export class HomepageComponent {
+export class HomepageComponent implements OnInit{
+    ngOnInit(): void {
+
+    }
     
 }
 
