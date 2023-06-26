@@ -15,13 +15,21 @@ import { ButtonModule } from 'primeng/button';
 import { EditorModule } from 'primeng/editor';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
+import { LoginComponent } from './Authorization/Login/login.component';
+import { HomepageComponent } from './HomePage/homepage.component';
+import { BackgroundComponent } from './Authorization/Background/background.component';
+import { RegistrationComponent } from './Authorization/Registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreationCarComponent,
     EditCarComponent,
-    ViewCarComponent
+    ViewCarComponent,
+    LoginComponent,
+    HomepageComponent,
+    BackgroundComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
