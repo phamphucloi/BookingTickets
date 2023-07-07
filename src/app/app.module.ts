@@ -15,10 +15,18 @@ import { ButtonModule } from 'primeng/button';
 import { EditorModule } from 'primeng/editor';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
+<<<<<<< Updated upstream
 import { LoginComponent } from './Authorization/Login/login.component';
 import { HomepageComponent } from './HomePage/homepage.component';
 import { BackgroundComponent } from './Authorization/Background/background.component';
 import { RegistrationComponent } from './Authorization/Registration/registration.component';
+=======
+import { DiscountComponent } from './Functionality/Creation/Discount/discount.component';
+import { PathAdminService } from './Service/path.service';
+import { DiscountService } from './Service/discountService';
+import { ViewDisComponent } from './Functionality/View/Discount/viewDis.component';
+import { EditDisComponent } from './Functionality/Edit/Discount/editDis.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -26,10 +34,16 @@ import { RegistrationComponent } from './Authorization/Registration/registration
     CreationCarComponent,
     EditCarComponent,
     ViewCarComponent,
+<<<<<<< Updated upstream
     LoginComponent,
     HomepageComponent,
     BackgroundComponent,
     RegistrationComponent
+=======
+    DiscountComponent,
+    ViewDisComponent,
+    EditDisComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -44,9 +58,12 @@ import { RegistrationComponent } from './Authorization/Registration/registration
     BrowserAnimationsModule,
     EditorModule,
     CalendarModule,
-    CheckboxModule
+    CheckboxModule,
   ],
-  providers: [],
+  providers: [
+    PathAdminService,
+    DiscountService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

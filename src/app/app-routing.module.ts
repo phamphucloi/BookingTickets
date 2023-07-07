@@ -4,9 +4,6 @@ import { HomepageComponent } from './HomePage/homepage.component';
 import { CreationCarComponent } from './Functionality/Creation/Car/creationCar.component';
 import { EditCarComponent } from './Functionality/Edit/Car/editCar.component';
 import { ViewCarComponent } from './Functionality/View/Car/viewCar.component';
-import { LoginComponent } from './Authorization/Login/login.component';
-import { BackgroundComponent } from './Authorization/Background/background.component';
-import { RegistrationComponent } from './Authorization/Registration/registration.component';
 
 const routes: Routes = [
   {
@@ -22,6 +19,10 @@ const routes: Routes = [
     component: CreationCarComponent,
   },
   {
+    path: 'creationDis',
+    component: DiscountComponent,
+  },
+  {
     path: 'editCar',
     component: EditCarComponent,
   },
@@ -29,20 +30,6 @@ const routes: Routes = [
     path: 'viewCar',
     component: ViewCarComponent,
   },
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
-    path:'background',
-    component: BackgroundComponent,
-    children: [
-      {path: '', component: LoginComponent},
-      {path: 'login', component: LoginComponent},
-      {path: 'registration', component: RegistrationComponent},
-
-    ]
-  }
 ];
 
 @NgModule({
