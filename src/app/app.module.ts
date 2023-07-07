@@ -20,6 +20,8 @@ import { LoginComponent } from './Authorization/Login/login.component';
 import { HomepageComponent } from './HomePage/homepage.component';
 import { BackgroundComponent } from './Authorization/Background/background.component';
 import { RegistrationComponent } from './Authorization/Registration/registration.component';
+import { PathAdminService } from './Service/path.service';
+import { DiscountService } from './Service/discountService';
 =======
 import { DiscountComponent } from './Functionality/Creation/Discount/discount.component';
 import { PathAdminService } from './Service/path.service';
